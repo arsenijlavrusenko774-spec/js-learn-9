@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог книг — REST API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <p class="eyebrow">Финальная работа · Express REST API</p>
+    <h1>Каталог книг</h1>
+    <p>Интерфейс уже готов. Ваша задача — реализовать API в <code>student-template.js</code>.</p>
+
+    <section class="panel">
+      <input id="search" placeholder="Поиск по названию или автору">
+      <button id="search-button" type="button">Найти</button>
+      <button id="reset-button" type="button" class="secondary">Сбросить</button>
+    </section>
+
+    <form id="book-form" class="panel form">
+      <input id="title" name="title" placeholder="Название книги" required>
+      <input id="author" name="author" placeholder="Автор" required>
+      <button type="submit">Добавить</button>
+    </form>
+
+    <p id="message" aria-live="polite"></p>
+    <div id="books" class="books"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

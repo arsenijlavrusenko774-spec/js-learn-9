@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+.container {
+    width: min(760px, calc(100% - 32px));
+    margin: 48px auto;
+    background: white;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px #1d2b4f18;
+}
+
+.eyebrow {
+    color: #3366cc;
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    margin: 24px 0;
+}
+
+input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #cfd6e6;
+    border-radius: 10px;
+}
+
+button {
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #315fd6;
+    color: white;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid #e0e5ef;
+    border-radius: 12px;
+}
+
+.todo.done .todo__text {
+    text-decoration: line-through;
+    opacity: .55;
+}
+
+.todo__text {
+    flex: 1;
+}
+
+.todo__delete {
+    background: #eef1f7;
+    color: #a52727;
+}
+
+#message {
+    min-height: 1.4em;
+    color: #a52727;
+}

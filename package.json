@@ -1,0 +1,13 @@
+{
+  "name": "js-lab-09-books-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
